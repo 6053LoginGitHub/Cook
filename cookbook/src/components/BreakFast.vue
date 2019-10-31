@@ -10,7 +10,7 @@
             <div class="cp" v-for="(list,i) of foodList" :key="i">
                     <div>
                         <router-link class="cp2" :to="'/Details?fid='+list.fid">
-                            <img class="cp3" @click="details" :src="'http://127.0.0.1:4000/'+list.img_url" alt="">
+                            <img class="cp3" @click="details" :src="'http://127.0.0.1:5050/'+list.img_url" alt="">
                         </router-link>
                     </div>
                 <!-- 简介及其用户 -->
@@ -27,7 +27,7 @@
                     <van-col span="6" >
                         <!-- yh用户 -->
                         <div class="yh">
-                            <img class="yhtx" :src="'http://127.0.0.1:4000/'+list.user_img" alt=""><br>
+                            <img class="yhtx" :src="'http://127.0.0.1:5050/'+list.user_img" alt=""><br>
                             <small>{{list.username}}</small>
                         </div>
                     </van-col>

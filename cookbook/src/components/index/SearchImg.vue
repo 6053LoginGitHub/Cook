@@ -62,7 +62,7 @@
             <div class="foods" v-for="(item,i) of list" :key="i">
                 <div class="left">
                     <router-link :to='`/details?fid=${item.fid}`'>
-                        <img class="xiaoimg" :src="`http://127.0.0.1:4000/${item.img_url}`">
+                        <img class="xiaoimg" :src="`http://127.0.0.1:5050/${item.img_url}`">
                     </router-link>
                 </div>
                 <div class="right">

@@ -7,7 +7,7 @@
                 <span class="tiltezz">作者:{{item.zuoze}}</span>
                 <span class="titledate">{{item.date_time}}26 </span>
             </p>
-            <video class="mysp" :src="`http://127.0.0.1:4000/${item.movie_url}`" controls  :poster="`http://127.0.0.1:4000/${item.movie_img}`"></video>
+            <video class="mysp" :src="`http://127.0.0.1:5050/${item.movie_url}`" controls  :poster="`http://127.0.0.1:5050/${item.movie_img}`"></video>
             <!-- <span class="footer">{{item.details}}</span> -->
             <span class="text-left">{{item.title}}的做法</span>
             <ul v-for="(item,a) of details" :key="a" class="steps">

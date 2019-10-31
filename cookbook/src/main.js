@@ -26,7 +26,7 @@ Vue.use(MintUI)
 //5:引入axios模块
 import axios from "axios"
 //6:配置服务器基础路径
-axios.defaults.baseURL="http://127.0.0.1:4000/"
+axios.defaults.baseURL="http://127.0.0.1:5050/"
 //7:配置保存session信息
 axios.defaults.withCredentials=true
 //8:axios 注册vue

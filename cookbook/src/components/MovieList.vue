@@ -4,7 +4,7 @@
       <div class="myzujian" v-for="(item,i) of list" :key="i"  >
          <span class="title">{{item.title}}</span> 
             <router-link class="my-img" :to="`/MovieDetails?mid=${item.mid}`">
-              <img :src="`http://127.0.0.1:4000/`+item.movie_img" alt="">
+              <img :src="`http://127.0.0.1:5050/`+item.movie_img" alt="">
               
               </router-link>
           <span class="footer">来自:{{item.zuoze}}</span>

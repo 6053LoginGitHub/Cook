@@ -44,7 +44,7 @@
         </div>
         <div class="jinri-content" v-for="(item,index) of list" :key="index">
           <router-link :to="`/details?fid=${item.fid}`">
-            <img :src="`http://127.0.0.1:4000/${item.img_url}`" />
+            <img :src="`http://127.0.0.1:5050/${item.img_url}`" />
           </router-link>
           <span class="food_name">{{item.food_name}}</span>
         </div>
@@ -57,7 +57,7 @@
         <div class="mingxing image2">
           <div class="mingxing-content" v-for="(item,index) of movie" :key="index">
             <router-link :to="`/MovieDetails?mid=${item.mid}`">
-              <img :src="`http://127.0.0.1:4000/${item.movie_img}`" />
+              <img :src="`http://127.0.0.1:5050/${item.movie_img}`" />
             </router-link>
             <div class="content">
               <h4>视频:{{item.title}}</h4>

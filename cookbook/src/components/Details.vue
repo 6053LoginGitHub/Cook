@@ -189,7 +189,7 @@ export default {
                 //名称赋值
                 this.food_name=this.foodid.food_name
                 // 图片地址赋值
-               this.src='http://127.0.0.1:4000/'+this.foodid.img_url;
+               this.src='http://127.0.0.1:5050/'+this.foodid.img_url;
                 //材料赋值
                this.foods=JSON.parse(this.foodid.foods)
                 // 公告啊赋值
