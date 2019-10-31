@@ -33,7 +33,7 @@ server.use(bodyParser.urlencoded({
 // 配置静态资源
 server.use(express.static("public"));
 // 配置监听端口
-server.listen(4000);
+server.listen(5050);
 
 // 1.查询用户名是否被注册
 server.get("/isReg",(req,res)=>{
