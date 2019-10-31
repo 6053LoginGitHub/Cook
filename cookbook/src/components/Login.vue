@@ -163,8 +163,8 @@ export default {
 <style scoped>
 /*设置最大容器宽度和居中*/
 .container{
-    width: 90%;
-    margin: 30px auto 0px;
+    width: 100%;
+    padding-top:25px;
 }
 /*设置输入框上边距 */
 .marginT25{

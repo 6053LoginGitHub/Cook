@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <!-- 注册第一行 -->
-    <van-row>
+    <van-row class="title-fan">
         <van-col span="4"><span @click="toIndex">返回</span></van-col>
         <van-col  class="title" span="10" offset="3">注册</van-col>
     </van-row>
@@ -182,11 +182,12 @@ export default {
         regNew(){
             if(!(this.boo[0]&&this.boo[1]&&this.boo[2]&&this.boo[3]&&this.boo[4])){
                 // alert("填写的信息不符合要求，请重新填写");
-                this.$messagebox("提示","填写的信息不能为空")
+                this.$toast("填写的信息不能为空")
                 return;
             }
             else if(this.sex==2){
-            alert("请确认在性别框选定性别信息！");
+            //alert("请确认在性别框选定性别信息！");
+	    this.$toast("请选择性别")
             return;
             }else{
                 var obj={
@@ -272,6 +273,7 @@ export default {
 }
 </script>
 <style scoped>
+
 /*弹性布局，水平居中 */
 .d-flex{
     display:flex;
@@ -287,8 +289,8 @@ export default {
 }
 /*设置最大容器宽度和居中*/
 .container{
-    width: 100%;
-    margin: 30px auto 0px;
+	width:100%;
+    padding-top:25px;
 }
 /*头头标题字体大小 */
 .title{
